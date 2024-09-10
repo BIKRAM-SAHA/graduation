@@ -97,20 +97,6 @@ export default function CelebrateScene() {
         cakeMeshEnd2.rotateY(Math.PI / 2.2);
         sceneRef.current.add(cakeMeshEnd2);
 
-        //candle
-        // const flame = await ExpoTHREE.loadAsync(
-        //     [
-        //         require("../../assets/models/flame/flame.obj"),
-        //         require("../../assets/models/flame/flame.mtl"),
-        //     ],
-        //     undefined,
-        //     (imageName) => console.log(imageName)
-        // );
-        // console.log(flame);
-        // sceneRef.current.add(flame);
-        // const model = await loadAsync("../../assets/models/flame/flame.gltf");
-        // console.log(model);
-
         const grid = new THREE.GridHelper(200, 40, 0x000000, 0x000000);
         grid.material.opacity = 0.2;
         grid.material.transparent = true;
